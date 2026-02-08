@@ -35,4 +35,4 @@ ENV PYTHONUNBUFFERED=1
 
 # Render는 PORT 환경변수를 주입함
 # 로컬 실행 시에는 기본값 8000 사용
-CMD ["sh", "-c", "uvicorn src.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "uvicorn src.app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
