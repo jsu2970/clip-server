@@ -3,7 +3,7 @@
 from fastapi import APIRouter, Form
 from pydantic import BaseModel
 
-from app.preview.PreviewService import ChallengePreviewService
+from src.preview.PreviewService import ChallengePreviewService
 
 router = APIRouter(tags=["preview"])
 

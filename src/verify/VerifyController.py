@@ -5,7 +5,7 @@ from fastapi import APIRouter, File, UploadFile, Form, HTTPException
 from PIL import Image
 
 # 전달 받은 이미지와 문자열의 유사도를 비교해주는 객체이다.
-from app.verify.VerifyService import ClipVerifier
+from src.verify.VerifyService import ClipVerifier
 
 # 서버 시작 시 CLIP 검증기를 한 번만 로딩한다.
 verifier = ClipVerifier(model_name="ViT-B/32")

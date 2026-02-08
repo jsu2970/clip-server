@@ -4,14 +4,14 @@ import re
 from typing import Dict, List, Tuple, Any
 
 import torch
-from app.verify.clip import clip
+from src.verify.clip import clip
 from PIL import Image
 
 from typing import Optional
-from app.verify.prompts import CATEGORY_PROMPTS
-from app.verify.prompts import map_title_to_categories
+from src.verify.prompts import CATEGORY_PROMPTS
+from src.verify.prompts import map_title_to_categories
 
-from app.verify.VerifyStatus import VerifyStatus
+from src.verify.VerifyStatus import VerifyStatus
 
 # 유사도 통과 정책 값이다.
 PASS_THRESHOLD = 0.20  # 카테고리 점수가 이 값 이상이어야 통과한다.

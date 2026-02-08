@@ -2,8 +2,8 @@
 
 from fastapi import FastAPI
 
-from app.preview.PreviewController import router as preview_router
-from app.verify.VerifyController import router as verify_router
+from src.preview.PreviewController import router as preview_router
+from src.verify.VerifyController import router as verify_router
 
 # FastAPI 앱을 생성한다.
 app = FastAPI(title="CLIP Challenge Image Verifier")

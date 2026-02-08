@@ -2,7 +2,7 @@
 
 from typing import Dict, Any
 
-from app.verify.VerifyService import map_title_to_categories
+from src.verify.VerifyService import map_title_to_categories
 
 """
 챌린지 제목을 받아서 사진 자동 검증 가능 여부를 판단하는 서비스이다.
